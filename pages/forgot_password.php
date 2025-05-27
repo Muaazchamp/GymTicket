@@ -18,10 +18,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
 
     // Database connection
-    $servername = "sql105.infinityfree.com";
-    $username = "if0_38476924";
-    $password = "sbemVulE3Tg8";
-    $dbname = "if0_38476924_gym_ticket";
+    $servername = "sql105.infi";
+    $username = "if0_3";
+    $password = "sbemV";
+    $dbname = "if0_38476924";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
             $mail->Username = 'gymticketsup@gmail.com';  // Your Gmail
-            $mail->Password = 'jleb mlpx dtwh kmku';     // App password (Not your real Gmail password)
+            $mail->Password = 'jleb mlpx ';     // App password (Not your real Gmail password)
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
