@@ -3,10 +3,10 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-$servername = "sql105.infinityfree.com"; // Get this from InfinityFree MySQL settings
-$username = "if0_38476924";
-$password = "sbemVulE3Tg8";
-$database = "if0_38476924_gym_ticket";
+$servername = "sql105."; // Get this from InfinityFree MySQL settings
+$username = "if0";
+$password = "sbemV";
+$database = "if0_38476924_gym";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
