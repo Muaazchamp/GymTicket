@@ -1,0 +1,72 @@
+Let's go through a **checklist** to ensure your **frontend and backend connection** is properly set up based on all the code we've implemented so far.
+
+---
+
+### **✅ Checklist for Frontend-Backend Connection**
+1. **Database Connection (`db.php`)**
+   - The database is connected using PDO.
+   - Queries use prepared statements to prevent SQL injection.
+   - The connection file is included in all necessary backend files.
+
+2. **Authentication System**
+   - `login.php` ✅ Uses AJAX to send login requests.
+   - `register.php` ✅ Uses AJAX for user registration.
+   - `auth_functions.php` ✅ Handles login, registration, and session management.
+   - `logout.php` ✅ Properly clears sessions and redirects users.
+
+3. **User Features**
+   - `dashboard.php` ✅ Ensures only logged-in users can access.
+   - `profile.php` ✅ Fetches user details securely.
+   - `update_profile.php` ✅ Uses AJAX to update user details dynamically.
+
+4. **Class Booking**
+   - `class_booking.php` ✅ Uses AJAX to book classes.
+   - The class selection dropdown is functional.
+   - Bookings are stored in the database.
+
+5. **Payments**
+   - `payment.php` ✅ Uses AJAX for payments.
+   - Payments are stored in the database.
+
+6. **Admin Panel**
+   - `admin_dashboard.php` ✅ Access restricted to admins only.
+   - `manage_users.php` ✅ Displays all users with an edit option.
+   - `manage_classes.php` ✅ Displays all classes with an edit option.
+   - `manage_payments.php` ✅ Displays all payments with an option to delete.
+
+7. **AJAX Integration**
+   - AJAX is embedded within login, registration, profile update, class booking, payments, and admin actions.
+   - Responses are handled dynamically (e.g., success messages, error messages).
+   - Page reloads are prevented unless necessary.
+
+8. **Security Features**
+   - **User Authentication**: Only logged-in users can access restricted pages.
+   - **Role-based Access**: Admin-only pages restrict normal users.
+   - **Input Validation & Sanitization**: `filter_input()` is used to prevent XSS/SQL injection.
+   - **Prepared Statements**: Used for all database queries.
+
+---
+
+### **🔍 What You Should Test**
+1. **Login & Registration**
+   - Try logging in and registering a new account.
+   - Test with incorrect credentials and empty fields.
+
+2. **Profile Update**
+   - Try updating user details from the profile page.
+
+3. **Class Booking**
+   - Select a class and ensure it gets stored in the database.
+
+4. **Payments**
+   - Make a payment and verify it appears in the database.
+
+5. **Admin Functions**
+   - Ensure the admin dashboard loads.
+   - Test editing users and classes.
+
+---
+
+### **🔹 Next Steps**
+✅ If everything works, I’ll now add **confirmation dialogs before deletions** as requested.  
+❌ If any feature isn’t working as expected, let me know what’s not functioning! 🚀

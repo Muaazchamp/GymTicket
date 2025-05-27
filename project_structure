@@ -1,0 +1,19 @@
+/project_root
+│── /assets
+│   ├── /css  (For stylesheets)
+│   │   ├── style.css
+│   ├── /js  (For JavaScript files, if any)
+│   ├── /images  (For images, logos, etc.)
+│── /includes  (Reusable backend files)
+│   ├── db.php  (Database connection)
+│   ├── auth_functions.php  (Authentication-related functions)
+│── /pages  (For different frontend pages)
+│   ├── index.php  (Main home page)
+│   ├── login.php  (Login page)
+│   ├── register.php  (Registration page)
+│   ├── logout.php  (Logout logic)
+│── /config
+│   ├── config.php  (General settings, constants)
+│── .htaccess  (For URL rewriting, security)
+│── .env  (For storing database credentials securely)
+│── README.md  (Project documentation)
